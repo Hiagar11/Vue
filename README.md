@@ -24,15 +24,15 @@
 
 ###Код для отображения детей
 
-<img width="100%" src="presentation/catalog.png">
+<img width="70%" src="presentation/catalog.png">
 
 ###Код самого ребенка и его обратное излучение(emit) данных
 
-<img width="100%" src="presentation/catalog-item.png">
+<img width="70%" src="presentation/catalog-item.png">
 
 ### Демо результата
 
-<img width="80%" src="presentation/thier_lesson.gif">
+<img width="80%" src="presentation/third_lesson.gif">
 
  Из важного стоит отметить require метод в :src пути для адекватного отображения картинок
 
