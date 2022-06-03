@@ -30,12 +30,12 @@
 
 ### И нашего дитя
 
-<img width="60%" height="45%" src="presentation/v-catalog-item-tm.png">
+<img width="60%" height="45%" src="presentation/v-catalo-item-tmg.png">
 <img width="60%" height="45%" src="presentation/v-catalog-item-js.png">
 
 ### Как результат
 
-<img width="60%" height="45%" src="presentation/third_lesson.gif">
+<img width="100%" height="45%" src="presentation/third_lesson.gif">
 
 
 Не менее важно `require` внутри :src="require('some path')" для адекватного отоборажения картинок!!
