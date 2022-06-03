@@ -1,14 +1,15 @@
 <template>
-<div>Hi Vue how are you?</div>
+  <div>Hi Vue how are you?</div>
+  <v-main-wrapper />
 </template>
 
 <script>
-
+import vMainWrapper from './components/v-main-wrapper'
 
 export default {
   name: 'App',
   components: {
-
+    vMainWrapper
   }
 }
 </script>
