@@ -28,11 +28,12 @@
 
 ###Код самого ребенка и его обратное излучение(emit) данных
 
-<img width="80%" src="presentation/catalog-item.png">
+<img width="80%" src="presentation/item.png">
+<img width="80%" src="presentation/emit.png">
 
 ### Демо результата
 
-<img width="80%" src="presentation/catalog-item.gif">
+<img width="80%" src="presentation/third_lesson.gif">
 
  Из важного стоит отметить require метод в :src пути для адекватного отображения картинок
 
