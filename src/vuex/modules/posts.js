@@ -1,35 +1,41 @@
-import axios from "axios";
+// import axios from "axios";
 
 export default {
-    state: {
-        products: []
-    }, // статичные данные
-
-    mutations: {
-        SET_PRODUCTS_TO_STATE: (state, products) => {
-            state.products = products;
-        }
-    }, // Синхронны
-
     actions: {
-        GET_PRODUCTS_FROM_API({commit}) {
-            return axios('http://localhost:3000/products', {
-                method: "GET"
-            })
-                .then((products) => {
-                    commit('SET_PRODUCTS_TO_STATE', products.data)
-                    return products;
-                })
-                .catch((error) => {
-                    console.log(error)
-                    return error;
-                })
+        async fetchPosts({commit}, limit = 3) {
+            const res = await fetch('https://jsonplaceholder.typicode.com/posts?_limit='+limit);
+            const posts = await res.json();
+
+            commit('updatePosts', posts);
+        },
+        async addPost({commit}, obj) {
+            commit('createPost', obj);
         }
-    },  // Асинхронны
+    },
+    mutations: {
+        updatePosts(state, posts) {
+            state.posts = posts
+        },
+        createPost(state, newPost) {
+            state.posts.unshift(newPost)
+        }
+    },
+
+    state: {
+        posts: []
+    },
 
     getters: {
-        PRODUCTS(state) {
-            return state.products
+        validPosts(state) {
+            return state.posts.filter(p => {
+                return p.title && p.body
+            })
+        },
+        allPosts(state) {
+            return state.posts
+        },
+        postsCount(state, getters) {
+            return getters.validPosts.length
         }
-    }, // Короткий путь до статичных данных !NB
+    },
 }
