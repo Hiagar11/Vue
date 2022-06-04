@@ -31,7 +31,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import "src/assets/styles/variables";
 .v-catalog-item {
   flex-basis: 25%;
   box-shadow: 0 0 8px 0 rgba(70,70,70,0.2);
