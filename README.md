@@ -3,4 +3,8 @@
 
 ## Нашел видео Минина:
 - Есть jsonpalceholder который помогает тестировать взаимодействие backend`a:
-https://jsonplaceholder.typicode.com/posts?_limit=num , где num наше число постов, котрые мы хотим получить
+https://jsonplaceholder.typicode.com/posts?_limit=num , где num наше число постов, котрые мы хотим получить._limit
+
+видимо это самая понятная схема в интеренете о работе с vuex
+
+<img src="presentation/vuex.png">
