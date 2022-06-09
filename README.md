@@ -1,24 +1,6 @@
-# vue-crm
+# CRM VUE
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Подготовка к проекту
+Скачали vue-cli глобально, но добавили плагины не через командную консоль, а через операцию vue ui,
+в целом ничего сложного, даже просто, но грузит она долго, как по мне, по привычнее будет именно через консоль,
+затем поудаляли с проекта все лишнее.
