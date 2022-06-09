@@ -5,6 +5,12 @@ export default {
         },
         DELETE_DROM_CART({commit}, index) {
             commit('REMOVE_FROM_CART', index)
+        },
+        INCREMENT({commit}, index) {
+            commit('INCREMENT', index)
+        },
+        DECREMENT({commit}, index) {
+            commit('DECREMENT', index)
         }
     },
     mutations: {
@@ -29,16 +35,24 @@ export default {
         },
         REMOVE_FROM_CART: (state, index) => {
             state.cart.splice(index, 1)
-        }
+        },
+        INCREMENT: (state, index) => {
+            state.cart[index].quantity++
+        },
+        DECREMENT: (state, index) => {
+            if (state.cart[index].quantity > 1) {
+                state.cart[index].quantity--
+            }
+        },
     },
 
     state: {
-        cart: []
+        cart: [],
     },
 
     getters: {
         CART(state) {
             return state.cart
-        }
+        },
     },
 }

@@ -6,6 +6,7 @@ import './assets/styles/styles.scss'
 
 import cartItem from './store/modules/vCartItem'
 import vCatalogItem from './store/modules/vCatalogItem'
+import router from './router'
 
 
 const store = createStore({
@@ -15,6 +16,6 @@ const store = createStore({
     }
 })
 
-createApp(App)
+createApp(App).use(router)
     .use(store)
     .mount('#app')
